@@ -26,12 +26,13 @@ class _MinPageState extends State<MinPage> {
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(15),bottomRight: Radius.circular(15))
               ),
               child: Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: const EdgeInsets.all(11.0),
                 child: Row(
                   children: [
                     Text("Message",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
                           Spacer(),
-                    Text("Edit"),
+                    TextButton(onPressed: (){},
+                        child: Text("Edit")),
                     SizedBox(width: 10,),
                     Icon(Icons.add),
                     SizedBox(width: 10,),
